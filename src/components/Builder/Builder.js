@@ -47,11 +47,12 @@ export default function Builder() {
       </div>
       <div className="right">
         <div className="character">
-          <div className="head" id="head">
+          <div className="bg head" id="head">
+            {/* put image tag in each div src={template literal} add style if you want */}
           </div>
-          <div className="middle" id="middle">
+          <div className="bg middle" id="middle">
           </div>
-          <div className="bottom" id="bottom">
+          <div className="bg bottom" id="bottom">
           </div>
         </div>
             
