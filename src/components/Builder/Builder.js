@@ -48,11 +48,13 @@ export default function Builder() {
       <div className="right">
         <div className="character">
           <div className="bg head" id="head">
-            {/* put image tag in each div src={template literal} add style if you want */}
+            <img src={`${process.env.PUBLIC_URL}/photos/${head}-head.png`} />
           </div>
           <div className="bg middle" id="middle">
+            <img src={`${process.env.PUBLIC_URL}/photos/${middle}-head.png`} />
           </div>
           <div className="bg bottom" id="bottom">
+            <img src={`${process.env.PUBLIC_URL}/photos/${bottom}-head.png`} />
           </div>
         </div>
             
