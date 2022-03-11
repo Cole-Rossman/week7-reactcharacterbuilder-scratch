@@ -1,5 +1,4 @@
 import React from 'react';
-import './Builder.css';
 
 export default function Builder({ setHead, setMiddle, setBottom, setCatchphrase, setCatchphraseArray, head, middle, bottom, catchphrase, catchphraseArray }) {
 
@@ -42,7 +41,7 @@ export default function Builder({ setHead, setMiddle, setBottom, setCatchphrase,
             <input id="catchphrase-input" onChange={(e) => setCatchphrase(e.target.value)} />
             <button onClick={saveCatchphrase} id="catchphrase-button">Submit</button>
             Your catchphrase:
-            <ul>
+            <ul className='phrases'>
               {catchphraseArray.map((item) => (
                 <li key={item}>{item}</li>
               ))}

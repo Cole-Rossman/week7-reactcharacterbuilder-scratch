@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './Main.css';
 
 import Builder from '../../components/Builder/Builder';
 
