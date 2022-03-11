@@ -1,14 +1,14 @@
 import React from 'react';
 import './Builder.css';
 
-export default function Builder() {
+export default function Builder({ setHead, setMiddle, setBottom, setCatchphrase, setCatchphraseArray, head, middle, bottom, catchphrase, catchphraseArray }) {
   return (
     <div className='builder'>
       <div className="left">
         <div className="picker">
           <label>
                     Head
-            <select id="head-dropdown">
+            <select id="head-dropdown" onChange={(e) => setHead(e.target.value)}>
               <option value="bird">Bird</option>
               <option value="duck">Duck</option>
               <option value="dog">Dog</option>
@@ -17,7 +17,7 @@ export default function Builder() {
           </label>
           <label>
                     Middle
-            <select id="middle-dropdown">
+            <select id="middle-dropdown" onChange={(e) => setMiddle(e.target.value)}>
               <option value="blue">Blue</option>
               <option value="dress">Fancy</option>
               <option value="pink">Pink</option>
@@ -26,7 +26,7 @@ export default function Builder() {
           </label>
           <label>
                     Bottom
-            <select id="bottom-dropdown">
+            <select id="bottom-dropdown" onChange={(e) => setBottom(e.target.value)}>
               <option value="leg">Single Leg</option>
               <option value="white">White Pants</option>
               <option value="blue">Blue Jeans</option>
@@ -48,13 +48,13 @@ export default function Builder() {
       <div className="right">
         <div className="character">
           <div className="bg head" id="head">
-            <img src={`${process.env.PUBLIC_URL}/photos/${head}-head.png`} />
+            <img style={{ height: '100px' }} src={`${process.env.PUBLIC_URL}/photos/${head}-head.png`} />
           </div>
           <div className="bg middle" id="middle">
-            <img src={`${process.env.PUBLIC_URL}/photos/${middle}-head.png`} />
+            <img style={{ height: '100px' }} src={`${process.env.PUBLIC_URL}/photos/${middle}-middle.png`} />
           </div>
           <div className="bg bottom" id="bottom">
-            <img src={`${process.env.PUBLIC_URL}/photos/${bottom}-head.png`} />
+            <img style={{ height: '100px' }} src={`${process.env.PUBLIC_URL}/photos/${bottom}-pants.png`} />
           </div>
         </div>
             

@@ -1,13 +1,12 @@
 import React from 'react';
-import './Preview.css';
+import './Character.css';
 
-export default function Preview({ head, middle, bottom, catchphrase }) {
+export default function Character({ head, middle, bottom }) {
   return (
     <div className='preview'>
       <label>{head}</label>
       <label>{middle}</label>
       <label>{bottom}</label>
-      <label>{catchphrase}</label>
     </div>
   );
 }
