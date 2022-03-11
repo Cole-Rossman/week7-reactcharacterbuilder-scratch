@@ -3,7 +3,7 @@ import './App.css';
 
 import Header from './components/layout/Header/Header';
 import Footer from './components/layout/Header/Header';
-import Main from './components/Main/Main';
+import Main from './views/Main/Main';
 
 function App() {
   return (
